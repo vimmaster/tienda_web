@@ -1,15 +1,12 @@
 <?php
-    require_once __DIR__.'/model/config.php';
 
-    $action = $_GET['do'];
+    require_once __DIR__.'/model/config.php';
+    $action = $_GET['action'];
 
     switch ($action)
     {
-        case 'list-categories':
-            require_once __DIR__.'/controller/list-categories.php';
-            break;
         default:
-            require_once __DIR__.'/controller/static-web.php';
+            require_once __DIR__.'/controller/list-categories.php';
             break;
     }
 ?>
