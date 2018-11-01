@@ -14,7 +14,7 @@
 </head>
 <header>
     <h1>PC-Sales</h1>
-    <a href="http://tdiw-a1.deic-docencia.uab.cat/html/login.html"><h2 class="right">LOG-IN</h2></a>
+    <a href="http://tdiw-a1.deic-docencia.uab.cat/login.html"><h2 class="right">LOG-IN</h2></a>
     <hr>
 </header>
 <body>

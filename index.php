@@ -8,7 +8,9 @@
         case 'listarProductos':
             require_once __DIR__.'/controller/listarProductos.php';
             break;
-
+        case 'login':
+            require_once __DIR__ . '/controller/login.php';
+            break;
         default:
             require_once __DIR__.'/controller/portada.php';
             break;
