@@ -8,8 +8,7 @@
 require_once  __DIR__.'/../model/config.php';
 require_once __DIR__.'/../model/register.php';
 
-$password_length = 3;
-
+$password_length = 10;
  if($_POST['name'] == '')
  {
      require_once __DIR__ .'/../view/register.php';
@@ -26,7 +25,6 @@ $password_length = 3;
      }
      else
      {
-         echo '<pre> Arrives here';
          header('Location: http://tdiw-a1.deic-docencia.uab.cat/view/register.php');
      }
  }
