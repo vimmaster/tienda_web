@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>PC-Sales</title>
+    <link rel="stylesheet" type="text/css" href="http://tdiw-a1.deic-docencia.uab.cat/view/css/estilo.css">
 </head>
 <header>
     <hr>
-    <a href="http://tdiw-a1.deic-docencia.uab.cat/"><h1>PC-Sales</h1></a>
+    <a href="../index.php"><h1>PC-Sales</h1></a>
 </header>
 <body>
     <section>
