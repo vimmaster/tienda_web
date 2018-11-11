@@ -6,7 +6,7 @@
  * Time: 13:15
  */
 
-    function saveLog($connection)
+    function saveReg($connection)
     {
         try
         {

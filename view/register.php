@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="/view/scripts1.js"></script>
+    <style> header, body { text-align: center} </style>
     <title>PC-Sales</title>
-    <script text="text/javascript" src="/view/scripts.js"></script>
 </head>
 <header>
     <hr>
@@ -12,7 +13,7 @@
 <body>
 <section>
     <div id="formDiv" >
-        <form name="register_form" action="http://tdiw-a1.deic-docencia.uab.cat/controller/register.php" onsubmit="return checkRegister();" method="post" autocomplete="on">
+        <form name="register_form" action="/controller/register.php" onsubmit="return checkRegister();" method="post" autocomplete="off">
             Nom Complet:<input type="text" name="name" required><br>
             Correu:<input type="email" name="mail" required><br>
             Password:<input type="password" name="pswd" required><br>

@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang= "es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/view/css/estilo.css">
+    <script src="scripts1.js"></script>
+    <style> header, body{text-align: center}</style>
     <title>PC-Sales</title>
-    <link rel="stylesheet" type="text/css" href="http://tdiw-a1.deic-docencia.uab.cat/view/css/estilo.css">
 </head>
 <header>
-    <hr>
-    <a href="../index.php"><h1>PC-Sales</h1></a>
+    <a href="../controller/list-categories.php"><h1>PC-Sales</h1></a>
 </header>
 <body>
     <section>
         <div id="formDiv" >
-            <form method="post" action="" onsubmit="return confirmaRegistre();">
-                Nom Complet:<input type="text" name="nom"><br/>
-                Correu:<input type="text" name="mail"><br/>
-                Password:<input type="text" name="pswd"><br/>
-                Repeteix password:<input type="text" name="rpswd"><br/>
-
+            <form name="login_form" action="/controller/login.php" onsubmit="return checkLogin();"  method="post" autocomplete="off">
+                Correu:<input type="email" name="mail" required><br/>
+                Password:<input type="password" name="pswd" required><br/>
                 <input type="submit" name="ENVIAR">
             </form>
         </div>

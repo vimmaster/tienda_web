@@ -1,6 +1,4 @@
 
-/**Problem with alert, ask to the teacher
- * and use script1 instead until new notice**/
 function checkRegister()
 {
     var form = document.getElementById('register_form');
@@ -15,4 +13,11 @@ function checkRegister()
         return false;
     }
 
+}
+
+function checkLogin()
+{
+    var form = document.getElementById('login_form');
+
+    return true;
 }

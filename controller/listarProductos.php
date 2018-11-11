@@ -1,8 +1,10 @@
 <?php
-
-require_once __DIR__.'/model/getProducts.php';
-
-$productos = getProducts(connexio, 1);
-echo productos;
-
+/** esp */
+require_once __DIR__.'/../model/connectDB.php';
+$connect_obj = ConnectDB::getInstance();
+$categoria = $_GET['id'];
+$productos = $connect_obj->getProducts($categoria);
+require_once __DIR__ . '/../view/list-productos.php';
 ?>
+
+
