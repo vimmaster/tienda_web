@@ -7,7 +7,7 @@
  * Time: 13:10
  */
 
-require_once __DIR__.'../model/connectDB.php';
+require_once __DIR__.'/../model/connectDB.php';
 require_once __DIR__.'/../model/register.php';
 $connect_obj = ConnectDB::getInstance();
 

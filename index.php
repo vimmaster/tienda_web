@@ -27,9 +27,7 @@
             require_once __DIR__.'/controller/login.php';
             break;
         default:
-            http_response_code(404);
-            require_once __DIR__ . '/view/notFound.php';
-            exit;
+            require_once __DIR__.'/controller/portada.php';
             break;
     }
 ?>

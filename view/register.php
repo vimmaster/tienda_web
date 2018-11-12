@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="/view/scripts1.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://tdiw-a1.deic-docencia.uab.cat/view/css/estilo.css">
     <style> header, body { text-align: center} </style>
     <title>PC-Sales</title>
 </head>
@@ -13,7 +14,8 @@
 <body>
 <section>
     <div id="formDiv" >
-        <form name="register_form" action="/controller/register.php" onsubmit="return checkRegister();" method="post" autocomplete="off">
+        <form name="register_form" action="/controller/register.php" onsubmit="return checkRegister();" method="post"
+              autocomplete="off">
             Nom Complet:<input type="text" name="name" required><br>
             Correu:<input type="email" name="mail" required><br>
             Password:<input type="password" name="pswd" required><br>

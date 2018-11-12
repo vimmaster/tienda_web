@@ -1,9 +1,10 @@
 <?php
+/**
+ * Eng
+ * Created by PhpStorm.
+ * User: Ricard Sanchez
+ * Date: 11/11/2018
+ * Time: 21:16
+ */
 
-require_once __DIR__.'../model/getCategories.php';
-require_once __DIR__.'../model/getProducts.php';
-require_once __DIR__.'../model/connectDB.php';
-
-$connexio = connectaBD();
-
-?>
+    require_once __DIR__.'/list-categories.php';
