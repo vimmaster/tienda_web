@@ -4,7 +4,7 @@
 <head>
     <title>portatilbarato.com</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="http://tdiw-a1.deic-docencia.uab.cat/view/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/view/estilo.css">
 </head>
 <header>
     <a href="/controller/list-categories.php"><h1>PortatilBarato</h1></a>

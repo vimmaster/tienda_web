@@ -19,17 +19,17 @@
 </header>
 <body>
 <section>
-    <table border="2" valign="middle" width="50%">
-        <tr>
-            <th><a href="http://tdiw-a1.deic-docencia.uab.cat/Vista/html/categoria.html"><h2>PC Sobremesa</h2></a></th>
-        </tr>
-        <tr>
-            <th><a href="http://tdiw-a1.deic-docencia.uab.cat/Vista/html/categoria.html"><h2>Portatiles</h2></a></th>
-        </tr>
-        <tr>
-            <th><a href="http://tdiw-a1.deic-docencia.uab.cat/Vista/html/categoria.html"><h2>Teclados</h2></a></th>
-        </tr>
-    </table>
+    <div class="grid-container">
+
+            <div class="grid-item"><a href="http://tdiw-a1.deic-docencia.uab.cat/Vista/html/categoria.html"><h2>PC Sobremesa</h2></a></div>
+
+
+            <div class="grid-item"><a href="http://tdiw-a1.deic-docencia.uab.cat/Vista/html/categoria.html"><h2>Portatiles</h2></a></div>
+
+
+            <div class="grid-item"><a href="http://tdiw-a1.deic-docencia.uab.cat/Vista/html/categoria.html"><h2>Teclados</h2></a></div>
+
+    </div>
 </section>
 <footer>
     <hr>

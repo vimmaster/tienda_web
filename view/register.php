@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="/view/scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://tdiw-a1.deic-docencia.uab.cat/view/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/view/estilo.css">
     <style> header, body { text-align: center} </style>
     <title>PC-Sales</title>
 </head>
