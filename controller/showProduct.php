@@ -11,7 +11,7 @@
 
     $connect_obj = ConnectDB::getInstance();
     $connection = $connect_obj->getConnection();
-    $product = getProduct($connection, $_GET['id2']);
+    $product = getProduct($connection, $_GET['id']);
     $product = $product[0];
 
     require_once __DIR__.'/../view/showProduct.php';

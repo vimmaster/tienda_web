@@ -15,7 +15,7 @@
     <section>
         <table border="2" valign="middle" width="65%">
             <tr>
-                <th><a href="/controller/showProduct.php?id2=<?php $producto['id']?>">
+                <th><a href="/controller/showProduct.php?id=<?php echo $producto['ID']?>">
                     <?php echo $producto['Nombre'] ?></a></th>
             </tr>
             <tr>
