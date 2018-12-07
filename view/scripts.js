@@ -20,3 +20,18 @@ function checkLogin()
 
     return true;
 }
+
+
+$(document).ready(function(){
+    $('.categ-item').click(function() {
+        var id = $(this).attr("id");
+        $('section#1').load('controller/listarProductos.php?id='+id+' #products-grid');
+    });
+
+    $('section#1').on('click', '.product-name', function() {
+        var id = $(this).attr("id");
+        $('section#1').load('controller/showProduct.php?id='+id+' #product-grid');
+    });
+});
+
+

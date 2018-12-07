@@ -7,7 +7,7 @@
  * Time: 13:10
  */
 
-if($_POST['name'] == '' and $_POST['pswd'] == '')
+if(!isset($_POST['name']) and !isset($_POST['pswd']))
 {
     require_once __DIR__.'/../view/login.php';
 }

@@ -133,3 +133,20 @@ ul.none li {
     border:0px;
     background:none;
 }
+
+.grid-container{
+    display: grid;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    grid-template-columns: auto auto auto;
+    background-color: #eef3ec;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+    text-align: center;
+}

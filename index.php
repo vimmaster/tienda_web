@@ -7,7 +7,15 @@
      */
     require_once __DIR__.'/model/connectDB.php';
     $connect_obj = new ConnectDB();
-    $action = $_GET['action'];
+    if(isset($_GET['action']))
+    {
+        $action = $_GET['action'];
+    }
+    else
+    {
+        $action = '';
+    }
+
 
     switch ($action)
     {

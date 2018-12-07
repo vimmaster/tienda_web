@@ -2,13 +2,13 @@
 <html lang= "es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/view/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/view/css/estilo.css">
     <script src="scripts.js"></script>
     <style> header, body{text-align: center}</style>
     <title>PC-Sales</title>
 </head>
 <header>
-    <a href="../controller/list-categories.php"><h1>PC-Sales</h1></a>
+    <a href="/"><h1>PortatilBarato</h1></a>
 </header>
 <body>
     <section>

@@ -12,13 +12,13 @@ require_once __DIR__.'/../model/register.php';
 $connect_obj = ConnectDB::getInstance();
 
 $password_length = 10;
- if($_POST['name'] == '')
+ if(!isset($_POST['name']))
  {
      require_once __DIR__ .'/../view/register.php';
  }
  else
  {
-     if($_POST['name'] !== '' && $_POST['mail'] !== '' && $_POST['pswd'] !== '' &&
+     if( $_POST['name'] !== '' && $_POST['mail'] !== '' && $_POST['pswd'] !== '' &&
          $_POST['repeat_pswd'] !== '' &&
          $_POST['pswd'] === $_POST['repeat_pswd'] &&
          strlen($_POST['pswd']) >= $password_length)
