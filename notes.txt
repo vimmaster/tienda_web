@@ -1,0 +1,4 @@
+							 NOTAS
+------------------------------------------------------------------------------------------------------------------------
+- Possible bug en controller/register.php, líneas 21 a 23, quizas se debería cambiar a isset
+- Para recargar la pàgina siempre que haya cambios en el .js Ctrl + click
