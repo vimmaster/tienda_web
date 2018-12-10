@@ -8,6 +8,8 @@ a:hover {
 }
 
 body {
+    position: static;
+    z-index: 0;
     font-family: Arial, Tahoma, Helvetica, sans-serif;
     font-size: 11px;
     color: #000;
@@ -39,6 +41,18 @@ ul li { margin-left: 15px; margin-bottom: 5px; }
     background: url(../images/but-bg.gif) repeat-x center #4F2F1D;
     font-variant: small-caps;
     color: #F8B150;
+}
+
+#button-profile {
+    position: absolute;
+    top: 7px;
+    right: 200px;
+    padding: 15px 15px;
+    font-size: 15px;
+}
+#label-profile {
+    position: static;
+    z-index: 1;
 }
 
 .clr { clear: both; }
