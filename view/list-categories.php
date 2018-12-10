@@ -13,12 +13,12 @@
 <body>
     <header>
         <a href="/"><h1>PortatilBarato</h1></a>
-        <a href="../controller/login.php"><h2 class="right">LOG-IN</h2></a>
-        <a href="../controller/register.php"><h2 class="right">REGISTER</h2></a>
-        <button id="button-profile"><i class="fas fa-user-circle"> </i></button>
-        <div id="panel-profile">
-            <div> Login</div>
-            <div> Register</div>
+        <div id="container-profile">
+            <button id="button-profile"><i class="fas fa-user-circle"> </i></button>
+            <div id="panel-profile" class="grid-item">
+                <a href="../controller/login.php"><h2 class="right">LOG-IN</h2></a>
+                <a href="../controller/register.php"><h2 class="right">REGISTER</h2></a>
+            </div>
         </div>
     </header>
     <section id="1">
