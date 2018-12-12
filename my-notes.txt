@@ -14,6 +14,4 @@ Método 2:
 -GetCategories() y getProducts() esta repetido.
 -Eliminar producte.php
 -Eliminar portada.php
-							 HECHAS
-------------------------------------------------------------------------------------------------------------------------
-
+- Script borrador -> codigo/tienda-web-buffer/clean.sh
