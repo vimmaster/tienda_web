@@ -1,0 +1,16 @@
+-AJAX
+-FLexBox
+-validacio part de client(falta todo login)
+-validacio part de servidor(falta todo login)
+-inciar sessio
+-carrito de la compra
+-afegir productes al carrito
+-pagina del carrito
+-Buscador
+-editar perfil de usuario
+-llista de comandes
+-modificar productes del carrito
+-eliminar productes del carrito
+-buidar carrito
+-pagina confirmacio de compra
+-desar compra a la base de dades
