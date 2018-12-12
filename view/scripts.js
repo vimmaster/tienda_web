@@ -35,3 +35,8 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $('#button-profile').click(function() {
+        $('#panel-profile').slideToggle('slow');
+    });
+});
