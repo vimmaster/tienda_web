@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "PC-Sales"
+AuthUserFile /home/TDIW/tdiw-a1/public_html/.htpasswd
+Require valid-user
