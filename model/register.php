@@ -10,13 +10,20 @@
     {
         try
         {
-            $query = $connection->prepare("insert into Usuario(Nombre, Password, email) values (:name,:pswd,:email)");
-            $query->bindParam(':name', $name);
-            $query->bindParam(':pswd', $password);
-            $query->bindParam(':email', $email);
-            $name = $_POST['name'];
-            $password = $_POST['pswd'];
+            $query = $connection->prepare("insert into Usuario(Email, Password, Nombre, Direccion, Poblacion,
+                    `Codigo-postal`) values (:email, :pswd, :name, :address, :town, :cp)");
             $email = $_POST['mail'];
+            $password = $_POST['pswd'];
+            $name = $_POST['name'];
+            $address = $_POST['address'];
+            $town = $_POST['town'];
+            $cp = $_POST['cp'];
+            $query->bindParam(':email', $email);
+            $query->bindParam(':pswd', $password);
+            $query->bindParam(':name', $name);
+            $query->bindParam(':address', $address);
+            $query->bindParam(':town', $town);
+            $query->bindParam(':cp', $cp);
             $query->execute();
         }
         catch (PDOException $e)

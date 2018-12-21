@@ -2,8 +2,7 @@ function checkRegister()
 {
     var form = document.getElementById('register_form');
 
-    if(form[3].value === form[4].value &&
-        form[3].length >= 10)
+    if(form[5].value === form[6].value)
     {
         return true;
     }

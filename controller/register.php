@@ -12,7 +12,7 @@ require_once __DIR__.'/../model/register.php';
 $connect_obj = ConnectDB::getInstance();
 
 $password_length = 10;
- if(!isset($_POST['name']))
+ if(!isset($_POST['name']) || empty($_POST['name']))
  {
      require_once __DIR__ .'/../view/register.php';
  }
