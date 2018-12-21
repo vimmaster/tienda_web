@@ -1,4 +1,4 @@
--AJAX
+----AJAX
 -FLexBox
 -validacio part de client(falta todo login)
 -validacio part de servidor(falta todo login)
