@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: xavi1
- * Date: 26/10/2018
- * Time: 13:48
- */
+/** esp */
+require_once __DIR__.'/../model/connectDB.php';
+$connect_obj = ConnectDB::getInstance();
+$categoria = $_GET['id'];
+$productos = $connect_obj->getProducts($categoria);
+require_once __DIR__ . '/../view/list-productos.php';
+?>
+
+
