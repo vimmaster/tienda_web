@@ -25,6 +25,32 @@
             $query->bindParam(':town', $town);
             $query->bindParam(':cp', $cp);
             $query->execute();
+
+            $query = $connection->prepare("select LAST_INSERT_ID()");
+            $query->execute();
+            $id = $query->fetch(PDO::FETCH_NUM)[0];
+
+            $query = $connection->prepare("update Usuario set Imagen=:img where ID=:id");
+            $query->bindValue('id', $id);
+            $query->bindValue('img', 'user_img' . (string) $id);
+            $query->execute();
+
+            return $id;
+        }
+        catch (PDOException $e)
+        {
+            echo '<pre> Error';print_r($e->getMessage()); die;
+        }
+    }
+
+    function getImageName($id, $connection)
+    {
+        try
+        {
+            $query = $connection->prepare("SELECT Imagen FROM Usuario WHERE ID = :id");
+            $query->bindValue('id', $id);
+            $query->execute();
+            return $query->fetch(PDO::FETCH_NUM)[0];
         }
         catch (PDOException $e)
         {

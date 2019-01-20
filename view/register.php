@@ -14,9 +14,10 @@
         <section>
             <div id="formDiv" >
                 <form name="register_form" action="/controller/register.php" onsubmit="return checkRegister();"
-                     method="post" autocomplete="off">
+                     method="post" enctype="multipart/form-data" autocomplete="off">
 
                     Nom Complet:<input type="text" name="name" required><br>
+                    Foto de perfil: <input type="file" name="profile_image"><br>
                     Direccion: <input type="text" name="address" size="30" maxlength='30' ><br>
                     Población: <input type="text" name="town" size="30" maxlength="30"> <br>
                     Codigo Postal: <input type="text" name="cp" size="5" maxlength='5' pattern="[0-9]{5}"
