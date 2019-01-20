@@ -28,7 +28,7 @@
         </section>
     <footer>
         <hr>
-        <h4> &copy PC-SALES: created by Xavier Molina and Ricard Sanchez</h4>
+        <?php include __DIR__.'/footer.php'?>
     </footer>
     </body>
 </html>

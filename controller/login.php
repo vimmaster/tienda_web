@@ -10,6 +10,8 @@
 if(!isset($_POST['name']) and !isset($_POST['pswd']))
 {
     require_once __DIR__.'/../view/login.php';
+    session_start();
+
 }
 else
 {
