@@ -12,12 +12,12 @@
         {
             $query = $connection->prepare("insert into Usuario(Email, Password, Nombre, Direccion, Poblacion,
                     `Codigo-postal`) values (:email, :pswd, :name, :address, :town, :cp)");
-            $email = $_POST['mail'];
-            $password = $_POST['pswd'];
-            $name = $_POST['name'];
-            $address = $_POST['address'];
-            $town = $_POST['town'];
-            $cp = $_POST['cp'];
+            $email = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
+            $password = filter_var($_POST['pswd'], FILTER_SANITIZE_STRING);
+            $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+            $address = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
+            $town = filter_var($_POST['town'], FILTER_SANITIZE_STRING);
+            $cp = filter_var($_POST['cp'], FILTER_VALIDATE_REGEXP, array("options"=> array("regexp" => "^\d{5}(?:[-\s]\d{4})?$^")));
             $query->bindParam(':email', $email);
             $query->bindParam(':pswd', $password);
             $query->bindParam(':name', $name);

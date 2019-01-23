@@ -1,7 +1,8 @@
-----AJAX
--FLexBox
--validacio part de client(falta todo login)
--validacio part de servidor(falta todo login)
+
+-FLexBox --> FET
+-validacio part de client  --> FET
+-validacio part de servidor  --> FET
+- filtratge de dades --> FET
 -inciar sessio
 -carrito de la compra
 -afegir productes al carrito

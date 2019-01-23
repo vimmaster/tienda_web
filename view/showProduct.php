@@ -1,3 +1,6 @@
+
+<!--
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,17 +13,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="/view/scripts.js"></script>
     </head>
+
+    -->
+
     <body>
-        <header>
-            <?php include __DIR__.'/header.php'?>
-        </header>
+
         <section>
             <div id="product-grid" class="grid-container">
 
                 <div class="grid-item"><?php echo $product['Nombre']?> </a></div>
 
 
-                <div class="grid-item"><?php echo $product['Descripcion'] ?></div>
+                <div class="grid-item"><?php echo htmlentities($product['Descripcion'], ENT_QUOTES | ENT_HTML5) ?></div>
 
 
                 <div class="grid-item"> <img src="<?php echo $product['Imagen']?>"></div>

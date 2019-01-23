@@ -1,4 +1,12 @@
-<?php /** Menu */ ?>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: xavi1
+ * Date: 22/01/2019
+ * Time: 15:01
+ */
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -17,37 +25,15 @@
 <div id="container-profile">
     <button id="button-profile"><i class="fas fa-user-circle"></i></button>
     <div id="panel-profile" class="grid-item">
-        <a href="../controller/login.php"><h>LOG-IN</h></a>
-        <a href="../controller/register.php"><h>REGISTER</h></a>
-       <!-- <a href="../controller/carrito.php"><h>CARRITO</h></a>
+    <!--    <a href="../controller/login.php"><h>LOG-IN</h></a>     ->>
+    <!--    <a href="../controller/register.php"><h>REGISTER</h></a>  -->
+
         <a href="#"><h>Mi cuenta</h></a>
         <a href="#"><h>Mis pedidos</h></a>
-        <a href="#"><h>Cerrar sessión</h></a>  -->
+        <a href="../controller/logout.php"><h>Cerrar sessión</h></a>
     </div>
 </div>
 <div id="container-profile">
-    <form action="../controller/carrito.php" method="get"><button id="button-profile" formaction="carrito"><i class="fas fa-shopping-cart"></i></button></form>
-
-    <!--
-
-    <div id="panel-profile" class="grid-item">
-        <a href="../controller/carrito.php"><h>CARRITO</h></a>
-    </div>
-
-    -->
+    <form action="../controller/carrito.php" method="get"> <button id="button-profile"><i class="fas fa-shopping-cart"></i></button> </form>
 
 </div>
-
-
-
-
-<!--
-
-<div id="container-profile-carrito "class="carrito">
-    <button id="button-profile-carrito"><i class="fas fa-user-circle"> </i></button>
-    <div id="panel-profile-carrito" class="grid-item">
-        <h>Carro:</h>
-    </div>
-</div>
-
--->

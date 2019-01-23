@@ -1,3 +1,5 @@
+<!--
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,10 +12,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="/view/scripts.js"></script>
     </head>
+
+    -->
+
     <body>
-        <header>
-            <?php include __DIR__.'/header.php'?>
-        </header>
+
         <section>
             <div id="products-grid" class="grid-container">
                 <?php foreach ($productos as $producto): ?>
