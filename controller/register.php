@@ -23,14 +23,21 @@ $password_length = 10;
          $_POST['pswd'] === $_POST['repeat_pswd'] &&
          strlen($_POST['pswd']) >= $password_length)
      {
-         $connection = $connect_obj->getConnection();
          $_POST['pswd'] = password_hash($_POST['pswd'], PASSWORD_BCRYPT);
-         $id = saveReg($connection);
+         $connection = $connect_obj->getConnection();
+         $id = createReg($connection);
+
          if (isset($_FILES['profile_image']) && !empty($_FILES['profile_image']))
          {
-             $path = $files_absolute_path . 'user_img' . (string) $id;
-             move_uploaded_file($_FILES['profile_image']['tmp_name'], $path);
+             $path = $files_absolute_path . 'user_img' . (string) $id . '.jpg';
+             $error = move_uploaded_file($_FILES['profile_image']['tmp_name'], $path);
+             if($error != 0)
+             {
+                 echo "Error number: " . $_FILES['reup_profile_image']['error'];
+                 die;
+             }
          }
+
          $_POST['name'] = ''; $_POST['mail'] = '';
          $_POST['pswd'] = ''; $_POST['repeat_pswd'] = '';
          header('Location: http://tdiw-a1.deic-docencia.uab.cat/index.php');

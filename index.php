@@ -8,6 +8,7 @@
     require_once __DIR__.'/model/connectDB.php';
     $connect_obj = new ConnectDB();
     $files_absolute_path = '/home/TDIW/tdiw-a1/public_html/fitxers/';
+    $files_public_path = '/fitxers/';
     if(isset($_GET['action']))
     {
         $action = $_GET['action'];

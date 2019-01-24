@@ -172,3 +172,12 @@ ul.none li {
     font-size: 15px;
     text-align: center;
 }
+
+.form-style1 {
+    text-align: center;
+}
+
+.img-stye1{
+    width: 100px;
+    height: 100%;
+}
