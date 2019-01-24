@@ -29,7 +29,7 @@
                     Codigo Postal: <input type="text" name="cp" size="5" maxlength='5' pattern="[0-9]{5}"
                                          title="Solo están permitidos 5 números" placeholder=
                                           "<?php echo $profile['Codigo-postal'] ?>"><br> <!-- "ˆ\d{5}$" -->
-                    Correu:<input type="email" name="mail" placeholder="<?php
+                    Correu:<input type="email" name="mail" placeholder="<?php echo
                     $profile['Email']?>"><br>
                     <input name="user" style="display:none" type="text" />
                     <input name="password" style="display:none" type="password" />
