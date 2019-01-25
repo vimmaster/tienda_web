@@ -29,7 +29,7 @@
 
                 <div class="grid-item"> <img src="<?php echo $product['Imagen']?>"></div>
 
-                <div class="grid-item"><button>Añadir a la cesta </button></div>
+                <div class="grid-item"><a href="?action=carrito&IDproducto=<?php echo $product['ID']; ?>"> <button>Añadir a la cesta </button></a></div>
 
             </div>
         </section>

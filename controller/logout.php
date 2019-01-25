@@ -13,6 +13,7 @@ if(isset($_SESSION['ID'])){
 
     echo"session cerrada";
 
-    include __DIR__.'/../index.php';
+    //include __DIR__.'/../index.php';
+    header("Location: ../index.php");
 
 }

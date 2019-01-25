@@ -34,6 +34,6 @@
     </div>
 </div>
 <div id="container-profile">
-    <form action="../controller/carrito.php" method="get"> <button id="button-profile"><i class="fas fa-shopping-cart"></i></button> </form>
+    <a href="?action=carrito"> <button id="button-profile"><i class="fas fa-shopping-cart"></i></button> </a>
 
 </div>

@@ -26,7 +26,8 @@ else
     session_start();
     $_SESSION['ID'] = $X;
 
-    include __DIR__.'/../index.php';
+    header("Location: ../index.php");
+    //include __DIR__.'/../index.php';
 }
 
 

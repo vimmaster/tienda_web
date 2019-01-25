@@ -1,4 +1,10 @@
-<?php /** Menu */ ?>
+<?php /** Menu */
+if(isset($_SESSION['carritoDesplegable'])){
+    $txt = "Productos añadidos: ".$_SESSION['carritoDesplegable']['Cantidad']."</br> Precio: ".$_SESSION['carritoDesplegable']['Precio'];
+}else{
+    $txt = 'No hay productos';
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -25,19 +31,33 @@
         <a href="#"><h>Cerrar sessión</h></a>  -->
     </div>
 </div>
-<div id="container-profile">
-    <form action="../controller/carrito.php" method="get"><button id="button-profile" formaction="carrito"><i class="fas fa-shopping-cart"></i></button></form>
 
-    <!--
+    <div class="carritoDesplegable">
 
-    <div id="panel-profile" class="grid-item">
-        <a href="../controller/carrito.php"><h>CARRITO</h></a>
+        <button class="botonCarrito">
+            <a href="../index.php?action=carrito"><i class="fas fa-shopping-cart"></i></a>
+        </button>
+        <div class="carritoContingut">
+            <h1>Carrito</h1>
+            <?php  echo $txt?>
+
+        </div>
+
+
+        <!--
+        <div id="container-profile">
+        <a href="?action=carrito"><button id="button-profile" formaction="carrito"><i class="fas fa-shopping-cart"></i></button> </a>
+
+
+
+        <div id="panel-profile" class="grid-item">
+            <a href="../controller/carrito.php"><h>CARRITO</h></a>
+        </div>
+
+
+
+        </div>     -->
     </div>
-
-    -->
-
-</div>
-
 
 
 

@@ -1,14 +1,47 @@
 <?php
-
-
 require_once __DIR__.'/../model/connectDB.php';
+require_once __DIR__.'/../model/showProduct.php';
 $connect_obj = ConnectDB::getInstance();
-$categorias = $connect_obj->getCategories();
+$connection = $connect_obj->getConnection();
 
-$connect_obj = ConnectDB::getInstance();
-$categoria = $_GET['id'];
-$productos = $connect_obj->getProducts($categoria);
+//session_start();
 
-require_once __DIR__.'/../view/carrito.php';
+if(isset($_GET['IDproducto'])){
+
+    $IDProducto = $_GET['IDproducto'];
+
+    $producto = getProduct($connection, $IDProducto);
+
+    //echo $producto[0]['Nombre'];
+
+    if (!isset($_SESSION["carritoDesplegable"])) {
+        $_SESSION["carritoDesplegable"] = [];
+        $_SESSION["carritoDesplegable"]["Precio"] = $producto[0]['Precio'];
+        $_SESSION["carritoDesplegable"]["Cantidad"] = 1;
+    } else {
+        $_SESSION['carritoDesplegable']["Precio"] += $producto[0]['Precio'];
+        $_SESSION['carritoDesplegable']["Cantidad"] += 1;
+    }
+
+
+
+    if(!isset($_SESSION["carrito"][$IDProducto]['Stock'])){
+
+        $_SESSION["carrito"][$IDProducto]['Stock'] = 1;
+
+    }else{
+        $_SESSION["carrito"][$IDProducto]['Stock'] += 1;
+    }
+
+    $_SESSION["carrito"][$IDProducto]['Nombre'] = $producto[0]['Nombre'];
+    $_SESSION["carrito"][$IDProducto]['Precio'] = $producto[0]['Precio'];
+
+
+}
+
+
+//echo $IDProducto;
+
+include __DIR__.'/../view/carrito.php';
 
 ?>
