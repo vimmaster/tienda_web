@@ -1,6 +1,7 @@
 <?php /** Menu */
 if(isset($_SESSION['carritoDesplegable'])){
-    $txt = "Productos añadidos: ".$_SESSION['carritoDesplegable']['Cantidad']."</br> Precio: ".$_SESSION['carritoDesplegable']['Precio'];
+    $txt = "Productos añadidos: ".$_SESSION['carritoDesplegable']['Cantidad']."</br> Precio: ".
+        $_SESSION['carritoDesplegable']['Precio'];
 }else{
     $txt = 'No hay productos';
 }
@@ -25,10 +26,10 @@ if(isset($_SESSION['carritoDesplegable'])){
     <div id="panel-profile" class="grid-item">
         <a href="../controller/login.php"><h>LOG-IN</h></a>
         <a href="../controller/register.php"><h>REGISTER</h></a>
-       <!-- <a href="../controller/carrito.php"><h>CARRITO</h></a>
-        <a href="#"><h>Mi cuenta</h></a>
-        <a href="#"><h>Mis pedidos</h></a>
-        <a href="#"><h>Cerrar sessión</h></a>  -->
+        <!-- <a href="../controller/carrito.php"><h>CARRITO</h></a>
+       <a href="#"><h>Mi cuenta</h></a>
+       <a href="#"><h>Mis pedidos</h></a>
+       <a href="#"><h>Cerrar sessión</h></a>  -->
     </div>
 </div>
 

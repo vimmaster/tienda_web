@@ -187,6 +187,7 @@ ul.none li {
     text-align: center;
 }
 
+
 .carrito{
     position: relative;
     display: inline-block;
@@ -269,4 +270,14 @@ ul.none li {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .carritoDesplegable:hover .botonCarrito {
     background-color: lightgray;
+}
+
+
+.form-style1 {
+    text-align: center;
+}
+
+.img-stye1{
+    width: 100px;
+    height: 100%;
 }

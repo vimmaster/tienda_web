@@ -1,3 +1,4 @@
 							 NOTAS
 ------------------------------------------------------------------------------------------------------------------------
 - Para recargar la pàgina siempre que haya cambios en el .js Ctrl + click
+- Para debugar la subida de imagenes, comentar la línea de header(".../index.php"), si se verán los Warnings.

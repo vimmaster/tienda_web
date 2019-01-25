@@ -1,8 +1,27 @@
 function checkRegister()
 {
-    var form = document.getElementById('register_form');
+    if(document.getElementById('pswd').value ===
+        document.getElementById('repeat_pswd').value)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 
-    if(form[5].value === form[6].value)
+}
+
+function checkEditProfile()
+{
+    var pswd1 = document.getElementById('pswd');
+    var pswd2 = document.getElementById('repeat_pswd');
+
+    if( pswd1.length == null && pswd2.length == null)
+    {
+        return true;
+    }
+    else if (pswd1.value === pswd2.value)
     {
         return true;
     }

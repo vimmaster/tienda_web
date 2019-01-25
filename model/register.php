@@ -6,7 +6,7 @@
  * Time: 13:15
  */
 
-    function saveReg($connection)
+    function createReg($connection)
     {
         try
         {
@@ -25,6 +25,17 @@
             $query->bindParam(':town', $town);
             $query->bindParam(':cp', $cp);
             $query->execute();
+
+            $query = $connection->prepare("select LAST_INSERT_ID()");
+            $query->execute();
+            $id = $query->fetch(PDO::FETCH_NUM)[0];
+
+            $query = $connection->prepare("update Usuario set Imagen=:img where ID=:id");
+            $query->bindValue('id', $id);
+            $query->bindValue('img', 'user_img' . (string) $id . 'jpg');
+            $query->execute();
+
+            return $id;
         }
         catch (PDOException $e)
         {
