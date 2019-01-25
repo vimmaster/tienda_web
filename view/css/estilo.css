@@ -1,4 +1,15 @@
 
+
+@media screen and (max-width: 768px) {
+
+    [class*="grid-container"] {
+        width: 100%;
+    }
+    [class*="grid-item-"] {
+        width: 100%;
+    }
+}
+
 a { text-decoration: none; color: #ea4800;}
 
 a:hover {
@@ -12,7 +23,7 @@ body {
     font-size: 11px;
     color: #000;
     line-height: 150%;
-    background-image: url("http://tdiw-a1.deic-docencia.uab.cat/img/fondo.jpg");
+    background-image: url("http://tdiw-a1.deic-docencia.uab.cat/img/fondo2.jpg");
     background-repeat: repeat;
 }
 
@@ -54,8 +65,8 @@ ul li { margin-left: 15px; margin-bottom: 5px; }
     position: absolute;
     z-index: 1;
 
-    width: 100px;
-    height: 75px;
+    width: auto;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px 20px 20px 20px;
@@ -157,18 +168,105 @@ ul.none li {
 }
 
 .grid-container{
+    opacity: 0.9;
     display: grid;
     grid-column-gap: 100px;
     grid-row-gap: 100px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     background-color: #eef3ec;
     padding: 10px;
 }
 
 .grid-item {
+    opacity: 1;
+
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px 20px 20px 20px;
     font-size: 15px;
     text-align: center;
+}
+
+.carrito{
+    position: relative;
+    display: inline-block;
+
+}
+
+.buttonCarrito {
+    padding: 2px 8px;
+    border: 1px solid #47210C;
+    /*background: url(../images/carrito.png) repeat-x center #4F2F1D;*/
+    background-image: url("http://tdiw-a1.deic-docencia.uab.cat/img/fondo2.jpg");
+    font-variant: small-caps;
+    color: #F8B150;
+}
+
+#container-profile-carrito{
+    position: relative;
+    display: inline-block;
+}
+#button-profile-carrito {
+    padding: 15px 15px;
+    font-size: 15px;
+}
+#panel-profile-carrito {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Desplegable Carrito */
+.botonCarrito {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.carritoDesplegable {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.carritoContingut {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.carritoContingut a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.carritoContingut a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.carritoDesplegable:hover .carritoContingut {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.carritoDesplegable:hover .botonCarrito {
+    background-color: lightgray;
 }

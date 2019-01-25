@@ -5,8 +5,18 @@
      * http://tdiw-a1.deic-docencia.uab.cat/?action=list-categories
      * http://tdiwtdiw-....cat/?action=show-product&id=1&...
      */
+
+    //session_start();
+    //if(session_start == true){
+     //   echo $_SESSION['ID'];
+   // }
+    session_start();
+
+    require_once __DIR__.'/controller/headerController.php';
+
     require_once __DIR__.'/model/connectDB.php';
     $connect_obj = new ConnectDB();
+
     if(isset($_GET['action']))
     {
         $action = $_GET['action'];
@@ -34,8 +44,11 @@
         case 'login':
             require_once __DIR__.'/controller/login.php';
             break;
+        case 'carrito':
+            require_once __DIR__.'/controller/carrito.php';
+            break;
         default:
-            require_once __DIR__.'/controller/portada.php';
+            include __DIR__.'/controller/portada.php';
             break;
     }
 ?>

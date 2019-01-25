@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,24 +11,28 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="/view/scripts.js"></script>
     </head>
+
+    -->
+
     <body>
-        <header>
-            <?php include __DIR__.'/header.php'?>
-        </header>
+
         <section id="1">
-            <div class="grid-container">
+            <div>
+                <div class="grid-container">
 
-                <?php foreach ($categorias as $categoria): ?>
+                    <?php foreach ($categorias as $categoria): ?>
 
-                    <div id="<?php echo $categoria['ID']?>" class="grid-item categ-item">
-                        <?php echo $categoria['Nombre'] ?></div>
+                        <div id="<?php echo $categoria['ID']?>" class="grid-item categ-item">
+                            <?php echo $categoria['Nombre'] ?></div>
 
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+
+                </div>
 
             </div>
         </section>
         <footer>
-            <h4> &copy PC-SALES: created by Xavier Molina and Ricard Sanchez</h4>
+            <?php include __DIR__.'/footer.php'?>
         </footer>
     </body>
 </html>

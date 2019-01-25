@@ -11,6 +11,8 @@
 	<p1> Especificacions:</p1>
 	<img src="http://tdiw-a1.deic-docencia.uab.cat/img/Az3.jpg" alt="Computer Image" style="width: 25%;">
 </section>
-
+<footer>
+    <?php include __DIR__.'/footer.php'?>
+</footer>
 </body>
 </html>
