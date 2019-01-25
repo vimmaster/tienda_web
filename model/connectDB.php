@@ -40,7 +40,7 @@ class ConnectDB
     public function getCategories()
     {
         try {
-            $consulta_categoria = $this->connexio->prepare("SELECT ID,Nombre FROM Categoria");
+            $consulta_categoria = $this->connexio->prepare("SELECT ID,Nombre,Imagen FROM Categoria");
             $consulta_categoria->execute();
             $resultat_categoria = $consulta_categoria->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {

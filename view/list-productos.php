@@ -24,7 +24,7 @@
                         <h3 class="product-item"><?php echo $producto['Nombre'] ?></h3>
                         <img class="product-item" src="<?php echo $producto['Imagen']?>">
                         <div class="product-item"><?php echo $producto['Precio']?>$</div>
-                        <button> Añadir a la cesta</button>
+                    <!--    <button> Añadir a la cesta</button>  -->
                     </div>
                 <?php endforeach; ?>
             </div>

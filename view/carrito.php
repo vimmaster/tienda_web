@@ -16,7 +16,7 @@
                 <h3>Cantidad</h3>
             </div>
             <div class="grid-item">
-                <h3>Total</h3>
+                <h3>Subtotal</h3>
             </div>
         </div>
         <?php if(isset($_SESSION['carrito']) ){
@@ -33,8 +33,18 @@
                 <?php echo $productoCarrito['Stock'];?>
             </div>
             <div class="grid-item">
-                <?php echo $productoCarrito["Precio"];?>
+                <?php echo $productoCarrito['Precio']*$productoCarrito['Stock'];?>$
             </div>
+
+        </div>
+        <?php endforeach; ?>
+        <div class="grid-item">
+
+            <h3>Total: </h3> <?php echo $_SESSION['carritoDesplegable']["Precio"];?>
+        </div>
+        <div class="grid-item">
+            <button>Realitzar comanda</button>
+            <a href="?action="><button>Buidar carrito </button></a>
         </div>
 
     </section>
@@ -42,25 +52,7 @@
 </body>
 
 
-<?php endforeach;
-/*                 {
-                    $nombre = "Nombre:".$productoCarrito['Nombre'];
-                    $precio = "Precio:".$productoCarrito['Precio'];
-                    $cantidad = "Cantidad:".$productoCarrito['Stock'];
-                    $total = $productoCarrito['Precio']*$productoCarrito['Stock'];
-                    $precioTotal = "Precio Total: ". $total."$;";
-                   // echo $productoCarrito['Stock'];
-                    echo $nombre;
-                    echo "     ";
-                    echo $precio."$";
-                    echo "     ";
-                    echo $cantidad;
-                    echo "     ";
+<?php
 
 
-                    }
-                    echo $precioTotal;
-                }
-
-*/
 }                ?>
