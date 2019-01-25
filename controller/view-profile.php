@@ -10,13 +10,15 @@
     require_once __DIR__.'/../model/view-profile.php';
     $connect_obj = ConnectDB::getInstance();
     $connection = $connect_obj->getConnection();
-
+    session_start();
     $files_absolute_path = '/home/TDIW/tdiw-a1/public_html/fitxers/';
     $files_public_path = '/fitxers/';
-    $id = 22;
+
 
     if (true /**hay log **/)
     {
+        // echo '<pre>'; print_r($_SESSION['ID']); die;
+        $id = $_SESSION['ID'][0]['ID'];
         if (!isset($_POST['hide_input']) || empty($_POST['hide_input']))
         {
             $profile = getProfile($connection, $id);
@@ -28,7 +30,6 @@
             if($_POST['pswd'] == '' && $_POST['repeat_pswd'] == '' ||
                 $_POST['pswd'] != '' && $_POST['repeat_pswd'] != '' && $_POST['pswd'] === $_POST['repeat_pswd'])
             {
-                /** $id = getId(); */
                 if ($_POST['pswd'] == '' || $_POST['repeat_pswd'] == '')
                 {
                     $_POST['pswd'] = '';
@@ -43,14 +44,15 @@
                 {
                     $path = $files_absolute_path . getImageName($connection, $id);
                     $ok = move_uploaded_file($_FILES['reup_profile_image']['tmp_name'], $path);
-                    if($ok != 0)
+                    if($ok != 0 && $ok != 1)
                     {
                         echo "Error number: " . $_FILES['reup_profile_image']['error'];
                         die;
                     }
                 }
                 $_POST['hide_input'] = '';
-                header('Location: http://tdiw-a1.deic-docencia.uab.cat/index.php'); 
+                header('Location: http://tdiw-a1.deic-docencia.uab.cat/index.php');
+                exit;
             }
             else
             {

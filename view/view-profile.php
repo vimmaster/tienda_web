@@ -19,7 +19,7 @@
                     Nom Complet:<input type="text" name="name" placeholder="<?php echo
                     $profile['Nombre']?>"><br>
                     <p> Imagen </p>
-                    <img src="<?php echo 'http://tdiw-a1.deic-docencia.uab.cat/fitxers/user_img22.jpg'?>"
+                    <img src="<?php echo $files_public_path . $profile['Imagen']?>"
                          class="img-style1" alt="<?php echo $profile['Nombre'] ?>"> <br>
                     Cambiar Imagen: <input type="file" name="reup_profile_image"><br>
                     Direccion: <input type="text" name="address" size="30" maxlength='30'

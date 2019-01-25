@@ -15,6 +15,8 @@ require_once __DIR__.'/../model/register.php';
 $connect_obj = ConnectDB::getInstance();
 
 $password_length = 10;
+$files_absolute_path = '/home/TDIW/tdiw-a1/public_html/fitxers/';
+
  if(!isset($_POST['name']) || empty($_POST['name']))
  {
      require_once __DIR__ .'/../view/register.php';
@@ -34,7 +36,7 @@ $password_length = 10;
          {
              $path = $files_absolute_path . 'user_img' . (string) $id . '.jpg';
              $error = move_uploaded_file($_FILES['profile_image']['tmp_name'], $path);
-             if($error != 0)
+             if($error != 0 && $error != 1)
              {
                  echo "Error number: " . $_FILES['reup_profile_image']['error'];
                  die;
@@ -44,6 +46,7 @@ $password_length = 10;
          $_POST['name'] = ''; $_POST['mail'] = '';
          $_POST['pswd'] = ''; $_POST['repeat_pswd'] = '';
          header('Location: http://tdiw-a1.deic-docencia.uab.cat/index.php');
+         exit;
      }
      else
      {
