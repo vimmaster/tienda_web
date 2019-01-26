@@ -172,13 +172,15 @@ ul.none li {
     display: grid;
     grid-column-gap: 100px;
     grid-row-gap: 100px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     background-color: #eef3ec;
     padding: 10px;
+
 }
 
 .grid-item {
     opacity: 1;
+
 
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -186,7 +188,6 @@ ul.none li {
     font-size: 15px;
     text-align: center;
 }
-
 
 .carrito{
     position: relative;
@@ -272,12 +273,30 @@ ul.none li {
     background-color: lightgray;
 }
 
+.grid-container-carrito{
+    opacity: 0.9;
+    display: grid;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    grid-template-columns: auto auto auto auto;
+    background-color: #eef3ec;
+    padding: 10px;
+}
 
-.form-style1 {
+.grid-item-carrito {
+    opacity: 1;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
     text-align: center;
+
 }
 
-.img-stye1{
-    width: 100px;
-    height: 100%;
+img {
+    max-width: 300px;
+    max-height: 300px;
+
 }
+

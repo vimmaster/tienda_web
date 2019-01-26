@@ -23,7 +23,7 @@
                     <?php foreach ($categorias as $categoria): ?>
 
                         <div id="<?php echo $categoria['ID']?>" class="grid-item categ-item">
-                            <?php echo $categoria['Nombre'] ?>
+                            <h3><?php echo $categoria['Nombre'] ?></h3>
                             <img class="product-item" src="<?php echo $categoria['Imagen']?>">
 
                         </div>

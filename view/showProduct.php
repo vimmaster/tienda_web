@@ -21,15 +21,24 @@
         <section>
             <div id="product-grid" class="grid-container">
 
-                <div class="grid-item"><?php echo $product['Nombre']?> </a></div>
+                <div class="grid-item">
+                    <h3>Prodcuto: </h3>
+                    <?php echo $product['Nombre']?>
+                </div>
 
 
-                <div class="grid-item"><?php echo htmlentities($product['Descripcion'], ENT_QUOTES | ENT_HTML5) ?></div>
+                <div class="grid-item">
+                    <h3>Descripcion: </h3>
+                    <?php echo htmlentities($product['Descripcion'], ENT_QUOTES | ENT_HTML5) ?>
+                </div>
 
 
                 <div class="grid-item"> <img src="<?php echo $product['Imagen']?>"></div>
 
-                <div class="grid-item"><a href="?action=carrito&IDproducto=<?php echo $product['ID']; ?>"> <button>Añadir a la cesta </button></a></div>
+                <div class="grid-item">
+                    <a>Precio: </a><?php echo $product['Precio'];?><a>$</a>
+                    <a href="?action=carrito&IDproducto=<?php echo $product['ID']; ?>"> <button>Añadir a la cesta </button></a>
+                </div>
 
             </div>
         </section>

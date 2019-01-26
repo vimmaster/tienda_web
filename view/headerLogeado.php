@@ -5,6 +5,17 @@
  * Date: 22/01/2019
  * Time: 15:01
  */
+
+ /** Menu */
+
+if(isset($_SESSION['carritoDesplegable'])){
+    if(!isset($_SESSION['carritoDesplegable']['Cantidad']))
+    {$_SESSION['carritoDesplegable']['Cantidad']=0;}
+    $txt = "Productos añadidos: ".$_SESSION['carritoDesplegable']['Cantidad']."</br> Precio: ".$_SESSION['carritoDesplegable']['Precio'];
+}else{
+    $txt = 'No hay productos';
+}
+
 ?>
 
 
@@ -21,7 +32,7 @@
     <script src="/view/scripts.js"></script>
 </head>
 
-<a href="/"><h1>PortatilBarato</h1></a>
+<a href="?action=0"><h1>PortatilBarato</h1></a>
 <div id="container-profile">
     <button id="button-profile"><i class="fas fa-user-circle"></i></button>
     <div id="panel-profile" class="grid-item">
@@ -33,7 +44,14 @@
         <a href="../controller/logout.php"><h>Cerrar sessión</h></a>
     </div>
 </div>
-<div id="container-profile">
-    <a href="?action=carrito"> <button id="button-profile"><i class="fas fa-shopping-cart"></i></button> </a>
+<div class="carritoDesplegable">
 
+    <button class="botonCarrito">
+        <a href="../index.php?action=carrito"><i class="fas fa-shopping-cart"></i></a>
+    </button>
+    <div class="carritoContingut">
+        <h1>Carrito</h1>
+        <?php  echo $txt?>
+
+    </div>
 </div>

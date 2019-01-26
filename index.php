@@ -17,9 +17,6 @@
     require_once __DIR__.'/model/connectDB.php';
     $connect_obj = new ConnectDB();
 
-    $files_absolute_path = '/home/TDIW/tdiw-a1/public_html/fitxers/';
-    $files_public_path = '/fitxers/';
-
     if(isset($_GET['action']))
     {
         $action = $_GET['action'];
@@ -49,6 +46,12 @@
             break;
         case 'carrito':
             require_once __DIR__.'/controller/carrito.php';
+            break;
+        case 'logout':
+            require_once __DIR__.'/controller/logout.php';
+            break;
+        case 'buidarCarrito':
+            require_once __DIR__.'/controller/vaciarCarrito.php';
             break;
         default:
             include __DIR__.'/controller/portada.php';
