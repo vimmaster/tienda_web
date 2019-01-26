@@ -29,7 +29,7 @@
     <!--    <a href="../controller/register.php"><h>REGISTER</h></a>  -->
 
         <a href="../controller/view-profile.php"><h>Mi cuenta</h></a>
-        <a href="#"><h>Mis pedidos</h></a>
+        <a href="../controller/make-historical.php"><h>Mis pedidos</h></a>
         <a href="../controller/logout.php"><h>Cerrar sessión</h></a>
     </div>
 </div>

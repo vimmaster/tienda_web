@@ -43,8 +43,8 @@
             <h3>Total: </h3> <?php echo $_SESSION['carritoDesplegable']["Precio"];?>
         </div>
         <div class="grid-item">
-            <button>Realitzar comanda</button>
-            <a href="?action="><button>Buidar carrito </button></a>
+            <a href="../controller/save-shopping.php"><button>Realitzar comanda</button></a>
+            <a href="../controller/vaciarCarrito.php"><button>Buidar carrito </button></a>
         </div>
 
     </section>
