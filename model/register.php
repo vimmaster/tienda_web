@@ -32,7 +32,7 @@
 
             $query = $connection->prepare("update Usuario set Imagen=:img where ID=:id");
             $query->bindValue('id', $id);
-            $query->bindValue('img', 'user_img' . (string) $id . 'jpg');
+            $query->bindValue('img', 'user_img' . (string) $id . '.jpg');
             $query->execute();
 
             return $id;
