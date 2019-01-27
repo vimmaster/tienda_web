@@ -2,7 +2,7 @@
 <html lang= "es">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/view/css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="/view/estilo.css">
         <script type="javascript" src="./scripts.js"></script>
         <style> header, body{text-align: center}</style>
         <title>PC-Sales</title>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <script src="/view/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="/view/css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="/view/estilo.css">
         <title>PortatilBarato</title>
     </head>
     <body>
