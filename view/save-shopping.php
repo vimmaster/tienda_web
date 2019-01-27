@@ -17,8 +17,8 @@
         </header>
         <h1>Se ha realizado la compra</h1>
         <section> Revisa tu correo electornico para ver los detalles del pedido</section>
-        <footer>
+        <footer class="footer-principal">
             <?php include __DIR__.'/footer.php'?>
-        </footer>
+        </footer class="footer-principal">
     </body>
 </html>

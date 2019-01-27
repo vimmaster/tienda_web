@@ -43,7 +43,7 @@ else
         <a href="../index.php?action=carrito"><i class="fas fa-shopping-cart"></i></a>
     </button>
     <div class="carritoContingut">
-        <h1>Carrito</h1>
+        <h3>Carrito</h3>
         <?php  echo $txt?>
     </div>
 </div>

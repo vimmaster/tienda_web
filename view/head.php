@@ -14,7 +14,7 @@
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
           crossorigin="anonymous">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Major+Mono+Display|Monoton|Orbitron"
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Major+Mono+Display|Monoton|Ubuntu"
           rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/view/scripts.js"></script>

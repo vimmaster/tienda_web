@@ -25,7 +25,7 @@
                 </ul>
             <?php endforeach; ?>
         </section>
-        <footer>
-            <h4> <?php include __DIR__.'/footer.php' ?> </h4>
-        </footer>
+        <footer class="footer-principal">
+            <?php include __DIR__.'/footer.php' ?>
+        </footer class="footer-principal">
     </body>

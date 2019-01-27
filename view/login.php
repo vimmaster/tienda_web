@@ -18,8 +18,8 @@
                 </form>
             </div>
         </section>
-        <footer>
+        <footer class="footer-principal">
             <?php include __DIR__.'/footer.php' ?>
-        </footer>
+        </footer class="footer-principal">
     </body>
 </html>
