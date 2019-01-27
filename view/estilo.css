@@ -2,9 +2,8 @@
 **/
 
 body {
-    font-family: Arial, Tahoma, Helvetica, sans-serif;
-    font-size: 11px;
-    color: #000;
+    font-family: 'Luckiest Guy', Tahoma, monospace;
+    color: #f9d5c9;
     line-height: 150%;
     background-image: url("http://tdiw-a1.deic-docencia.uab.cat/img/fondo2.jpg");
     background-repeat: repeat;
@@ -12,7 +11,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-    font-family: Tahoma;
+    font-family: 'Luckiest Guy', monospace;
 }
 
 a { text-decoration: none; color: #ea4800;}
@@ -189,15 +188,11 @@ a:hover {
 img {
     max-width: 300px;
     max-height: 300px;
-
 }
 
-@media screen and (max-width: 768px) {
-
-    [class*="grid-container"] {
-        width: 100%;
-    }
-    [class*="grid-item-"] {
-        width: 100%;
-    }
+.titulo-principal
+{
+    font-family: 'Major Mono Display', Tahoma;
+    font-size: 26px;
+    text-align: center;
 }

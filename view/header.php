@@ -9,7 +9,7 @@ if(isset($_SESSION['carritoDesplegable']) && !empty($_SESSION['carritoDesplegabl
 }
 ?>
 
-<a href="/"><h1>PortatilBarato</h1></a>
+<a href="/"><h1 class="titulo-principal">PortatilBarato.com</h1></a>
 <div id="container-profile">
     <button id="button-profile"><i class="fas fa-user-circle"></i></button>
     <div id="panel-profile" class="grid-item">
