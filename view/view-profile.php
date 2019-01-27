@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <script src="/view/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="/view/estilo.css">
-        <title>PortatilBarato</title>
+        <?php include __DIR__.'/head.php' ?>
     </head>
     <body>
         <header>
-            <a href="/"><h1>PortatilBarato</h1></a>
+            <?php include __DIR__.'/../controller/headerController.php' ?>
         </header>
         <section>
             <div id="formDiv" >
@@ -45,5 +42,8 @@
                 </form>
             </div>
         </section>
+        <footer>
+            <?php include __DIR__.'/footer.php'; ?>
+        </footer>
     </body>
 </html>

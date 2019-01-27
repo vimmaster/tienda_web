@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <script src="/view/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="/view/estilo.css">
+        <?php include __DIR__.'/head.php' ?>
         <style> header, body { text-align: center} </style>
-        <title>PortatilBarato</title>
     </head>
     <body>
         <header>
-            <a href="/"><h1>PortatilBarato</h1></a>
+            <a href="/controller/list-categories.php"><h1>PortatilBarato</h1></a>
         </header>
         <section>
             <div id="formDiv" >
@@ -34,5 +31,8 @@
                 </form>
             </div>
         </section>
+        <footer>
+            <?php include __DIR__.'/footer.php' ?>
+        </footer>
     </body>
 </html>

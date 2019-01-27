@@ -1,23 +1,14 @@
-<!--
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>portatilbarato.com</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="/view/css/estilo.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-              integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-              crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="/view/scripts.js"></script>
+        <?php __DIR__.'/head.php' ?>
     </head>
-
-    -->
-
     <body>
-
+        <header>
+            <?php include __DIR__.'/../controller/headerController.php' ?>
+        </header>
         <section>
+            <?php /** Este div se carga con jQuery sino se va por action */ ?>
             <div id="products-grid" class="grid-container">
                 <?php foreach ($productos as $producto): ?>
                     <div id="<?php echo $producto['ID']?>" class="grid-item">
@@ -30,7 +21,6 @@
             </div>
         </section>
     <footer>
-        <hr>
         <?php include __DIR__.'/footer.php'?>
     </footer>
     </body>

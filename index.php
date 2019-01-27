@@ -1,18 +1,9 @@
 <?php
-    /**eng*/
-    /**
-     * Aces example
-     * http://tdiw-a1.deic-docencia.uab.cat/?action=list-categories
-     * http://tdiwtdiw-....cat/?action=show-product&id=1&...
-     */
 
-    //session_start();
-    //if(session_start == true){
-     //   echo $_SESSION['ID'];
-   // }
     session_start();
 
-    require_once __DIR__.'/controller/headerController.php';
+    $files_absolute_path = '/home/TDIW/tdiw-a1/public_html/fitxers/';
+    $files_public_path = '/fitxers/';
 
     require_once __DIR__.'/model/connectDB.php';
     $connect_obj = new ConnectDB();

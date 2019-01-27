@@ -6,7 +6,7 @@
  * Time: 15:18
  */
 
-if(isset($_SESSION['ID'])){
+if(isset($_SESSION['ID'][0]['ID'])){
     include __DIR__.'/../view/headerLogeado.php';
 
 }
