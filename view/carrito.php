@@ -51,7 +51,17 @@
         </div>
         <?php endif; ?>
         <div class="grid-item-carrito">
-            <a href="/controller/save-shopping.php"><button>Realitzar comanda</button></a>
+            <?php if(isset($_SESSION['ID'][0]['ID']))
+            {
+                $string = "";
+            }
+            else
+            {
+                $string = 'disabled';
+            }
+            ?>
+            <a href="/controller/save-shopping.php"><button <?php echo $string ?>>
+                    Realitzar comanda</button></a>
             <a href="?action=buidarCarrito"><button>Buidar carrito </button></a>
         </div>
     </section>
